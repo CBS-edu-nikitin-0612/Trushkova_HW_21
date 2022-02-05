@@ -2,27 +2,27 @@
 {
     internal class MyList<T>
     {
-        private T[] arrayT;
+        private T[] _arrayT;
 
         public MyList(int Length)
         {
-            arrayT = new T[Length];
+            _arrayT = new T[Length];
         }
 
         public T this[int index]
         {
-            get { return arrayT[index]; }
-            set { arrayT[index] = value; }
+            get { return _arrayT[index]; }
+            set { _arrayT[index] = value; }
         }
 
         public int Count
         {
-            get { return arrayT.Length; }
+            get { return _arrayT.Length; }
         }
 
         public void Add(T element)
         {
-            arrayT = arrayT.Append(element).ToArray();
+            _arrayT = _arrayT.Append(element).ToArray();
         }        
     }
 }
