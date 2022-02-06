@@ -1,8 +1,9 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Task3;
+using Task3;//без явного указания не работает программа, тк не видит другие классы
 
 Console.WriteLine("Hello, Teacher!");
 
+//Создание словаря
 MyDictionary<string, string> myDictionary = new MyDictionary<string, string>();
 myDictionary.Add("книга", "book");
 myDictionary.Add("ручка", "pen");
@@ -10,9 +11,14 @@ myDictionary.Add("солнце", "sun");
 myDictionary.Add("яблоко", "apple");
 myDictionary.Add("стол", "table");
 
+//Количество пар слов в словаре
+Console.WriteLine(myDictionary.Count);
+
 try
 {
-    Console.WriteLine(myDictionary.Count);
+    //Вывод на экран переводов заданных слов
+    int index = 3;
+    Console.WriteLine($"{index + 1}-ая пара слов в словаре: {myDictionary[index].Item1} - {myDictionary[index].Item2}");
     string word = "солнце";
     Console.WriteLine($"Слово {word} по-английски будет {myDictionary[word]}");
     word = "ручка";

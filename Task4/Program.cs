@@ -1,8 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Task4;
+using Task4; //без явного указания не работает программа, тк не видит другие классы
 
 Console.WriteLine("Hello, Teacher!");
 int length = 10;
+
+//Создание коллекции из рандомных чисел
 MyList<int> myList = new MyList<int>(length);
 
 Random random = new Random();
