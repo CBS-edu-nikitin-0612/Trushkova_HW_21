@@ -27,17 +27,21 @@
                 if (_arrayTKeys.Contains(key))
                     return _arrayTValues[IndexOf(key)];
                 else
-                    throw new Exception("Нет такого слова");
+                    throw new Exception("Нет такого слова в словаре");
             }
         }
 
         private int IndexOf(TKey key)
         {
             int i = 0;
-            for (int j = 0; j < _arrayTKeys?.Length; j++)      
-                if (_arrayTKeys[j].Equals(key))
-                    return j;
+            if (_arrayTKeys != null)
+            {
+                for (int j = 0; j < _arrayTKeys?.Length; j++)
+                    if (_arrayTKeys[j].Equals(key))
+                        return j;
+            }
             return i;
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Task2;
 
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Hello, Teacher!");
 int length = 10;
 MyList<int> myList = new MyList<int>(length);
 
