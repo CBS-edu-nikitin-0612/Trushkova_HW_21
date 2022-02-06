@@ -29,7 +29,7 @@
         }   
         
         //Вывод на экран коллекции
-        public static void Show()
+        public void Show()
         {
             if (_arrayT != null)
             {
