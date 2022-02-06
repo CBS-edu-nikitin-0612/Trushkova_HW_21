@@ -26,18 +26,6 @@
         public void Add(T element)
         {
             _arrayT = _arrayT.Append(element).ToArray();
-        }   
-        
-        //Вывод на экран коллекции
-        public void Show()
-        {
-            if (_arrayT != null)
-            {
-                for (int i = 0; i < _arrayT.Length; i++)
-                {
-                    Console.WriteLine(_arrayT[i].ToString());
-                }
-            }
-        }
+        }  
     }
 }
